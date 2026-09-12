@@ -20,6 +20,7 @@
       <h2>Events in Action</h2>
       <button @click="increaseCounter(5)">Add 5</button>
       <button @click.right="decreaseCounter(5)">Reduce 5</button>
+      <p v-once>Starting Counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
       <input type="text" @input="setName($event)" @keyup.enter="confirmInput">
       <p>Your Name: {{ confirmedName }}</p>
