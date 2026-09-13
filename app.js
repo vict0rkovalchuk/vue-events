@@ -6,6 +6,10 @@ const app = Vue.createApp({
     };
   },
   methods: {
+    outputFullname() {
+      console.log('LALALA');
+      return this.name ? `${this.name} Kovalchuk` : '';
+    },
     setName(event) {
       this.name = event.target.value;
     },
